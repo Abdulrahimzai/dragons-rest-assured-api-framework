@@ -35,4 +35,5 @@ public class APITestConfig extends BaseConfig {
 		String token = response.jsonPath().get("token");
 		return token;
     }
+    
 }

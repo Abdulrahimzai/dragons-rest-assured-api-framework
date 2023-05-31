@@ -21,6 +21,7 @@ public class TokenVerifyTest extends APITestConfig {
 			
 			Response response = request.when().get(EndPoints.TOKEN_VERIFY.getValue());
 			Assert.assertEquals(response.getStatusCode(), 200);
+			//home work add invalid token and validate response.
 			
 		 
 	 }

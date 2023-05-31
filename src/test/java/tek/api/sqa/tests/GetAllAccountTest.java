@@ -16,6 +16,7 @@ public class GetAllAccountTest extends APITestConfig {
 		String token =getValidToken();
 		RequestSpecification request = RestAssured.given();
 		request.header("Authorization", "Bearer "+ token);
+		//this request is ready to send.
 		Response response =request.when().get(EndPoints.GET_ALL_ACCOUNTS.getValue());
 		Assert.assertEquals(response.getStatusCode(), 200);
 		
